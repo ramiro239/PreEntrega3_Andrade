@@ -1,0 +1,49 @@
+@import "../extra/media-queries";
+
+/* sobre nosotros */
+.caja-aboutus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+}
+
+.img-aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-aboutus {
+    img {
+        width: 85%;
+        height: 75%;
+    }
+}
+
+.caja-aboutus {
+    div {
+        margin: 6em 0;
+    }
+}
+
+@include mobile {
+
+    /* sobre nosotros */
+    .caja-aboutus {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        div {
+        margin: 0;  
+        }
+    }
+
+    .img-aboutus {
+        img {
+            width: 100%;
+            padding-top: 0;
+        }
+    }
+
+}

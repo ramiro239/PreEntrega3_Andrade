@@ -1,0 +1,33 @@
+@import "../extra/media-queries";
+
+/* home */
+.main-home {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.imagen-home {
+    margin: 20px;
+}
+
+.imagen-home {
+    img {
+        width: 100%;
+        padding-top: 5em;
+    }
+}
+
+@include mobile {
+
+    /* home */          
+    .main-home {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .imagen-home img {
+        width: 100%;
+        padding-top: 0;
+    }
+}

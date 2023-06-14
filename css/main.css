@@ -1,0 +1,184 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif; }
+
+/* estilos mobile */
+/* home */
+.main-home {
+  display: grid;
+  grid-template-columns: 1fr 3fr; }
+
+.imagen-home {
+  margin: 20px; }
+
+.imagen-home img {
+  width: 100%;
+  padding-top: 5em; }
+
+@media screen and (max-width: 576px) {
+  /* home */
+  .main-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto); }
+  .imagen-home img {
+    width: 100%;
+    padding-top: 0; } }
+
+/* filmografia */
+/* estilos mobile */
+.caja-filmografia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 6em 1em;
+  margin: 0 5% 3em; }
+
+iframe {
+  height: 100%;
+  width: 100%; }
+
+@media screen and (max-width: 576px) {
+  /* filmografia */
+  .caja-filmografia {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1em; } }
+
+/* estilos mobile */
+/* galeria */
+.caja-galeria {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em; }
+
+.imgdrive,
+.imgbladerunner,
+.imglalaland,
+.imgtheplace {
+  width: 100%;
+  height: 100%;
+  padding: 1em; }
+
+.imgdrive img,
+.imgbladerunner img,
+.imglalaland img,
+.imgtheplace img {
+  width: 100%;
+  height: 100%; }
+
+@media screen and (max-width: 576px) {
+  /* galeria */
+  .caja-galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); } }
+
+/* estilos mobile */
+/* sobre nosotros */
+.caja-aboutus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em; }
+
+.img-aboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.img-aboutus img {
+  width: 85%;
+  height: 75%; }
+
+.caja-aboutus div {
+  margin: 6em 0; }
+
+@media screen and (max-width: 576px) {
+  /* sobre nosotros */
+  .caja-aboutus {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto); }
+    .caja-aboutus div {
+      margin: 0; }
+  .img-aboutus img {
+    width: 100%;
+    padding-top: 0; } }
+
+/* estilos mobile */
+/* contacto */
+.caja-contacto {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2em; }
+
+.text-contact {
+  text-align: start; }
+
+.form-contact {
+  padding-right: 1em; }
+
+form {
+  width: 100%; }
+
+input {
+  width: 100%; }
+
+textarea {
+  width: 100%; }
+
+@media screen and (max-width: 576px) {
+  .caja-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto); } }
+
+/* body */
+body {
+  height: 100vh; }
+
+/* header */
+p,
+a,
+h1,
+h2,
+label {
+  color: #fff; }
+
+header {
+  background-color: #007bff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 20px; }
+
+a:link,
+a:visited {
+  text-decoration: none; }
+
+/* main */
+body {
+  background-color: #0f0f0f; }
+
+main {
+  background-color: #000000;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px; }
+
+main h1 {
+  text-align: center;
+  padding: 25px; }
+
+/* footer */
+footer {
+  background-color: #007bff;
+  padding: 15px; }

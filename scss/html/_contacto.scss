@@ -1,0 +1,35 @@
+@import "../extra/media-queries";
+/* contacto */
+.caja-contacto {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2em;
+}
+
+.text-contact {
+    text-align: start;
+}
+
+.form-contact {
+    padding-right: 1em;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+@include mobile{
+    .caja-contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+}

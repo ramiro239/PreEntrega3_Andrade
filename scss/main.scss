@@ -1,0 +1,79 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+@import "html/home";
+@import "html/filmografia";
+@import "html/galeria";
+@import "html/sobre-nosotros";
+@import "html/contacto";
+
+
+
+/* body */
+body {
+    height: 100vh;
+}
+
+/* header */
+
+p,
+a,
+h1,
+h2,
+label {
+    color: #fff;
+}
+
+header {
+    background-color: #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin-right: 20px;
+        }
+    }
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+/* main */
+
+body {
+    background-color: #0f0f0f;
+}
+
+main {
+    background-color: #000000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+main {
+    h1 {
+        text-align: center;
+        padding: 25px;
+    }
+}
+
+/* footer */
+footer {
+    background-color: #007bff;
+    padding: 15px;
+}

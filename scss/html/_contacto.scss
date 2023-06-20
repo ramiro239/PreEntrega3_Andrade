@@ -33,3 +33,11 @@ textarea {
         grid-template-rows: repeat(2, auto);
     }
 }
+
+@include tablet{
+    .caja-contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+}

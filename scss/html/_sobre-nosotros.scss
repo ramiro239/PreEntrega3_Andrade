@@ -47,3 +47,15 @@
     }
 
 }
+
+@include tablet{
+    .caja-aboutus {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.2fr 1.3fr;
+        gap: 3em;
+        div {
+        margin: 0;
+        }
+    }
+}

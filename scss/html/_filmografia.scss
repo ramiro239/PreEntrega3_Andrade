@@ -3,7 +3,7 @@
 
 .caja-filmografia {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.3fr 2.7fr;
     grid-template-rows: repeat(4, 1fr);
     gap: 6em 1em;
     margin: 0 5% 3em;
@@ -20,5 +20,13 @@ iframe {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 1fr);
         gap: 1em;
+    }
+}
+
+@include tablet{
+    .caja-filmografia {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1.7fr 1fr);
+        gap: 1em;       
     }
 }
